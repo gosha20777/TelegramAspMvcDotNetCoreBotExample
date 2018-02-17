@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegrammAspMvcDotNetCoreBot", "TelegrammAspMvcDotNetCoreBot\TelegrammAspMvcDotNetCoreBot.csproj", "{4279BEDB-47F7-4717-9764-D4145889A20E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4279BEDB-47F7-4717-9764-D4145889A20E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4279BEDB-47F7-4717-9764-D4145889A20E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4279BEDB-47F7-4717-9764-D4145889A20E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4279BEDB-47F7-4717-9764-D4145889A20E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FB218AC-4D7A-48A6-8E88-20686AA42D9F}
+	EndGlobalSection
+EndGlobal
