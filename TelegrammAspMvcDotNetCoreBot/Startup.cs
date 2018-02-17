@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TelegrammAspMvcDotNetCoreBot.Models;
 
 namespace TelegrammAspMvcDotNetCoreBot
 {
@@ -29,15 +30,15 @@ namespace TelegrammAspMvcDotNetCoreBot
         {
             if (env.IsDevelopment())
             {
-                app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
+                app.UseBrowserLink();
             }
             else
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
-            app.UseStaticFiles();
+            // обработка ошибок HTTP
+            app.UseStatusCodePages();
 
             app.UseMvc(routes =>
             {
@@ -45,6 +46,9 @@ namespace TelegrammAspMvcDotNetCoreBot
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            //Bot Configurations
+            Bot.GetBotClientAsync().Wait();
         }
     }
 }

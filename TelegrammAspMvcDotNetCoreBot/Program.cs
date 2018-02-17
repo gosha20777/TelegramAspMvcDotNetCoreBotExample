@@ -12,6 +12,10 @@ namespace TelegrammAspMvcDotNetCoreBot
 {
     public class Program
     {
+        /// <summary>
+        /// Точка входа в приложение
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             BuildWebHost(args).Run();
